@@ -1,0 +1,87 @@
+---
+output: pdf_document
+---
+
+[//]: (Welcome! This is a comment that won't get compiled into the pdf / tex.)
+
+# Chapter One\label{chap:first}
+
+This is a chapter which can contain subsections, subsubsections, subsubsubsections, as well as LaTeX hidden subsections or whatever else you want. 
+
+In here you can also cite authors from your bibtex using RefManageR like so `r Cite(bib, "Engelbrecht2002")`. There are lots of ways to cite with RefManageR you can find out more information on this by pulling up the help files for the packages in RStudio with ``?Cite``.
+
+In paragraphs you can draw emphasis to certain words with *italic*, **bold**, _italic_, or __bold__.
+
+
+## Basic Markdown Features
+
+This is a subsection. In a subsection you can include many things including lists, equations (referenced), output from blocks of R code, R plots, etc.
+
+This is a list ...
+
+1. Item 1
+2. Item 2
+3. Item 3
+    + Item 3a
+    + Item 3b
+
+this is a block quote ...
+
+> Let's get schwifty
+
+and this is a horizontal rule ...
+
+------
+
+and this is a LaTeX equations ...
+
+\begin{equation}
+\label{eq-abc}
+a + b = c
+\end{equation}
+
+which can be referenced in line \autoref{eq-abc}.
+
+Equations can also be done inline without referencing $e = mc^2$
+
+### Running inline R Code
+
+R code outputs can be integrated directly into your dissertation.
+
+This can be done inline e.g. the iris dataset has `r nrow(iris)` rows and `r ncol(iris)` columns.
+
+Or we can run the R code as a chunk and just include text outputs ...
+
+```{r}
+print(summary(iris))
+```
+
+or plot outputs (with captions, labels, and sizes) ... 
+
+```{r fig.cap = "A caption. \\label{irisgraph}", fig.height=6, fig.width=6}
+plot(iris)
+```
+
+#### Subsubsubsection
+
+We can also include \LaTeX components such as tables ...
+
+\begin{table}
+\centering
+\caption{This is a table with info}
+\label{table-paramvalues}
+\begin{tabular}{ p{4cm} p{4cm} p{4cm} }
+\hline \\ [-1.5ex]
+colname & colname & colname \\ [1ex]
+\hline \\ [-1.5ex]
+Info & info & info \\ [1ex]
+Info & info & info \\ [1ex]
+Info & info & info \\ [1ex]
+\hline
+\end{tabular}
+\end{table}
+
+We can also include figures into the document ...
+
+![This is a caption. \label{figurelabel}](./figures/thug_life.jpg)
+

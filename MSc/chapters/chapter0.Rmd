@@ -1,0 +1,53 @@
+---
+output: pdf_document
+---
+
+\pagestyle{headings}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+# Introduction\label{chap:introduction}
+
+\begin{quote}
+  {\it You may place a brief sketch of the scenario that inspired the research here (you may also choose to leave it out). For example, if you are writing about ACOs, you might write something about the simplicity and efficiency of an ant colony. This may be relatively informal (but not colloquial). Avoid references here. Refer to some of the dissertations on the CIRG website for some ideas on what you might include.}
+\end{quote}
+
+Place some very general background information here, setting the scene for where your work fits in tot he broader scheme of things.
+
+For instance, give a very broad overview of the field of CI-based function optimisation. You should already provide some references (here's an example of a reference `r Cite(bib, "Engelbrecht2002", .opts = list(hyperlink = "to.doc"))`.
+
+
+## Motivation\label{sec:introduction:motivation}
+
+Provide a more specific background to your specific approach or focus area. Give specific references. Explain why this area justifies investigation (this would probably include a description of shortcomings or gaps in the field).
+
+
+## Objectives\label{sec:introduction:objectives}
+
+Introduce the research objectives of your work. It is quite likely that these may only become clear after you have completed the rest of the dissertation, so revisit this list once you have finished everything else. Include broad objectives, like ``conduct a survey of available techniques in the field of \ldots'', or ``present practical case studies in the realm of \ldots''. You should use a bulleted list, as follows:
+
+1. First objective here.
+2. Then, second objective here.
+3. Third objective here, and so on.
+
+
+## Contributions\label{sec:introduction:contributions}
+
+Enumerate the novel contributions that your work sets out to make to the field. Include specific novel contributions to the field, such as taxonomies, or empirical results. These will be quite closely related to the objectives listed in Section~\ref{sec:introduction:objectives}. You may also use a bulleted list here.
+
+
+## Dissertation Outline\label{sec:introduction:outline}
+
+Introduce a list of the remaining chapters of your work, in which a brief (two to three line) description of the material covered in each is included:
+
+1. **Chapter~\ref{chap:first}** focusses on \ldots.
+2. **Chapter~\ref{chap:second}** focusses on \ldots.
+3. **Chapter~\ref{chap:third}** focusses on \ldots.
+
+After you have discussed the chapters, provide a brief introduction for the list of appendices:
+
+1. **Appendix~\ref{app:appendix1}** describes \ldots.
+2. **Appendix~\ref{app:appendix2}** describes \ldots.
+3. **Appendix~\ref{app:appendix3}** describes \ldots.
+
+If you provide an index, you may provide a page reference here, indicating that it begins on page~\pageref{index} of the text.
